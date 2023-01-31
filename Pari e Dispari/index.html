@@ -5,14 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palidroma</title>
+    <title>Pari e dispari</title>
 
     <!-- js -->
     <script type="text/javascript" src="./js/myscript.js" defer></script>
 </head>
 
 <body>
-
+    <h1>PARI E DISPARI</h1>
+    <p>Gioca a pari o dispari con il computer.</p>
+    <label for="disPari">Scegli se sei dispari o pari:</label>
+    <br>
+    <select name="disPari" id="disPari">
+        <option value="dispari">Dispari</option>
+        <option value="pari">Pari</option>
+    </select>
+    <br>
+    <label for="userNum">Scegli un numero tra 1 e 5:</label>
+    <br>
+    <input type="number" id="userNum" name="userNum" min="1" max="5">
+    <br>
+    <button type="button" id="genera">Scopri chi ha vinto!</button>
+    <div id="pcNum"></div>
+    <div id="winner"></div>
 </body>
 
 </html>
