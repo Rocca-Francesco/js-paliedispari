@@ -8,7 +8,6 @@ generaEl.addEventListener(
         const userPart = document.getElementById("disPari").value;
         // salvo il numero scelto dall'utente
         const userNumEl = parseInt(document.getElementById("userNum").value);
-        console.log(typeof userNumEl);
 
         // in base alla fazione decido chi deve vincere
         if (userPart == "pari") {
@@ -38,7 +37,6 @@ function somma(userNum) {
 // funzione per capire chi ha vinto
 function PariDispari(Pari, Dispari, userNumEl) {
     const risultato = somma(userNumEl);
-    console.log(risultato, Pari, Dispari);
     if (risultato % 2 == 0) {
         document.getElementById("winner").innerHTML = Pari + " ha vinto!"
     } else if (risultato % 2 != 0) {
